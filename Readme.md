@@ -1,4 +1,5 @@
 # Loaders
+This is an important resource for the Webpack tool to read the files, along with the JavaScript programming language
 
 # Css
 Create a css file
@@ -138,4 +139,4 @@ console.log(pessoa);
 ```
 
 # Tips
-Keep minimu loaders to get better performance
+Keep minimum loaders to get better performance
