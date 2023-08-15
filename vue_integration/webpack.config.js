@@ -24,13 +24,8 @@ module.exports = {
       template: path.resolve(__dirname, 'public', 'index.html')
     }),
   ],
-  resolve: {
-    alias: {
-      vue$: 'vue/dist/vue.runtime.esm.js'
-    },
-    extensions: ['*', '.js', '.vue', '.json']
-  },
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    port: 3000
   }
 }
