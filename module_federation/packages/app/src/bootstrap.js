@@ -1,4 +1,4 @@
-import App from './App';
+import App from './AppRoot.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
