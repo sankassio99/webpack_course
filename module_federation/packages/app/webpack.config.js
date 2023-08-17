@@ -38,5 +38,14 @@ module.exports = {
             template: './public/index.html',
             title: 'App'
         }),
+        new ModuleFederationPlugin({
+            name: "App root",
+            // Quem eu quero consumir?
+            remotes: {
+                // nome do App - Url onde ele está rodando / arquivo exposto
+                HomeApp: 'HomeApp@http://localhost:9002/remoteEntry.js',
+                ContactApp: 'ContactApp@http://localhost:9003/remoteEntry.js'
+            }
+        })
     ]
 }

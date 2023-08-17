@@ -38,5 +38,15 @@ module.exports = {
             template: './public/index.html',
             title: 'App'
         }),
+        new ModuleFederationPlugin({
+            name: "ContactApp",
+            // Arquivo a ser consumido por outro app
+            filename: 'remoteEntry.js',
+            // App a ser exposto: pode ser mais de um
+            exposes: {
+                // nome a ser exposto / src do component
+                './ContactPage': './src/Contact'
+            }
+        })
     ]
 }
