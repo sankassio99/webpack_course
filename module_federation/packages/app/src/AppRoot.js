@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import VueApp from './VueApp.js';
 import {
   BrowserRouter as Router,
   Route,
@@ -32,6 +33,9 @@ const App = () => {
             <NavItem>
               <Link to="/contact">Contact</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/vue">Vue App</Link>
+            </NavItem>
           </Nav>
         </Navbar>
         {/* React Router resource */}
@@ -44,6 +48,11 @@ const App = () => {
           <Route exact path='/contact'>
             <Suspense fallback={<div>Loading...</div>}>
               <ContactPage />
+            </Suspense>
+          </Route>
+          <Route exact path='/vue'>
+            <Suspense fallback={<div>Loading...</div>}>
+              <VueApp/>
             </Suspense>
           </Route>
         </Switch>

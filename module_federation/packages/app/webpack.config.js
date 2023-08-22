@@ -44,7 +44,8 @@ module.exports = {
             remotes: {
                 // nome do App - Url onde ele está rodando / arquivo exposto
                 HomeApp: 'HomeApp@http://localhost:9002/remoteEntry.js',
-                ContactApp: 'ContactApp@http://localhost:9003/remoteEntry.js'
+                ContactApp: 'ContactApp@http://localhost:9003/remoteEntry.js',
+                VueApp: 'VueApp@http://localhost:9004/remoteEntry.js',
             }
         })
     ]
