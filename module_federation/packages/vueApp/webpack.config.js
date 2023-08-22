@@ -5,10 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 module.exports = {
-    entry: './src/bootstrap.js',
+    entry: './src/main.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      publicPath: 'http://localhost:9004/'
+      publicPath: 'http://localhost:9004/',
+      filename: 'main.js'
     },
     mode:"development",
     devServer: {
